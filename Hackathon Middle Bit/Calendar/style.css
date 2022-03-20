@@ -13,8 +13,8 @@
 }
 
 .tg td {
-    background-color: #FFFCE1;
-    border-color: #aaa;
+    background-color: #FFFFFF;
+    border-color: #080808;
     border-style: solid;
     border-width: 1px;
     font-family: 'Farro', sans-serif;
@@ -22,20 +22,20 @@
 }
 
 .tg th {
-    background-color: #27dfcf;
-    border-color: #aaa;
+    background-color: #232bb0;
+    border-color: #080808;
     border-style: solid;
     border-width: 1px;
     font-family: 'Farro', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    color: #FFFCE1;
+    color: #FFFFFF;
     height: 100px;
     letter-spacing: 5px;
 }
 
 .blue {
-    color:#27dfcf;
+    color:#080808;
     font-weight: 600;
     height: 10vh;
 }
