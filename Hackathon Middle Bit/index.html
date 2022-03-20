@@ -1,0 +1,30 @@
+<!--Links this HTML to JS-->
+<script src="./main.js"></script>
+
+<!--Login-->>
+<div class="login">
+    <!--Login-->
+    <div class="email">
+        <form action="/action_page.php">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" onblur="getVal()"><br><br>
+            <label for="pwd">Password:</label>
+            <input type="text" id="pwd" name="pwd" onblur="getVal()"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <!--Create Account-->
+    <div class="createacc">
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" onblur="getVal()"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" onblur="getVal()"><br><br>
+            <label for="emailreg">Your Email:</label>
+            <input type="text" id="emailreg" name="emailreg" onblur="getVal()"><br><br>
+            <label for="pwdreg">Set Your Password:</label>
+            <input type="text" id="pwdreg" name="pwdreg" onblur="getVal()"><br><br>
+            <button onClick="check_error()" id="btn1">Create Account</button>
+        </form>
+    </div>
+</div>
