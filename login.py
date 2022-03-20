@@ -12,4 +12,8 @@ cur.execute(
 
 @app.route("/v1/login", methods=["CREATE"])
 def create_user():
+    data: map = request.get_json()
+    if data["email"] and data["password"]:
+        cur.execute("INSERT INTO users (email, password) VALUES (?, ?)",
+                    data["email"], data["password"])
     return (jsonify(request.get_json()))
