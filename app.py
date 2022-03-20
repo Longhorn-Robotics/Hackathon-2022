@@ -2,9 +2,11 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
     return "Hello World!"
+
 
 # A very simple Flask Hello World app for you to get started with...
 
@@ -15,11 +17,13 @@ app = Flask(__name__)
 purchase_server_working = True
 website_title = "EGrocery"
 
+
 @app.route('/')
 def hello_world():
     return 'Hello from Flask!'
 
-@app.route('server-status')
+
+@app.route('/server-status')
 def get_server_status():
     pur_ser_str = "ERROR RETRIEVING STATUS"
 
@@ -33,6 +37,9 @@ def get_server_status():
     <h4>Website Server: OK</h4>
     <h4>Purchase Server: {pur_ser_str}</h4>"""
 
+
 @app.route('/')
 def home():
-    return render_template('index.html', title=website_title, pur_ser=purchase_server_working)
+    return render_template('index.html',
+                           title=website_title,
+                           pur_ser=purchase_server_working)
