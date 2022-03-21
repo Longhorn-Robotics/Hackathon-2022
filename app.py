@@ -1,18 +1,8 @@
-from flask import Flask, jsonify, request
-
-app = Flask(__name__)
-
-
-@app.route("/")
-def index():
-    return "Hello World!"
-
-
 # A very simple Flask Hello World app for you to get started with...
 
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='static')
 
 import assigments
 
@@ -20,9 +10,9 @@ purchase_server_working = True
 website_title = "EGrocery"
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello from Flask!'
+@app.route("/")
+def serve():
+    return send_from_directory('', 'index.html')
 
 
 @app.route('/server-status')
@@ -40,11 +30,12 @@ def get_server_status():
     <h4>Purchase Server: {pur_ser_str}</h4>"""
 
 
+'''
 @app.route('/')
 def home():
     return render_template('index.html',
                            title=website_title,
                            pur_ser=purchase_server_working)
-
+'''
 
 assigments.init(app)
