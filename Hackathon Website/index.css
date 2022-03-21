@@ -1,0 +1,116 @@
+body {
+    font-family: Avenir Book;
+    margin: 0;
+}
+
+.logo {
+    background-color: #232bb0;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: black;
+    padding: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    background-color: black;
+    color: white;
+    display: inline;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.section1 {
+    background-color: white;
+    color: black;
+}
+
+.welcome {
+    font-size: 48px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    
+}
+
+.instructions {
+    font-size: 14pt;
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;;
+}
+
+.footer {
+    background-color: black;
+    color: gray;
+    font-size: 12px;
+    padding: 25px;
+    padding-bottom: 150px;
+    text-decoration: clear;
+}
+
+.login {
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+.offsetcal {
+    padding: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.cal {
+    width: 100%;
+    margin: 0;
+}
+
+table {
+    border:2px solid #b3adad;
+    border-collapse:collapse;
+}
+
+table th {
+    border:2px solid #b3adad;
+    padding:81px;
+    background: #000000;
+    color: #ffffff;
+}
+
+table td {
+    border:2px solid #b3adad;
+    text-align:center;
+    padding:50px;
+    background: #ffffff;
+    color: #000000;
+}
+
+.create {
+    padding-left: 50px;
+    padding-bottom: 50px;
+    
+}

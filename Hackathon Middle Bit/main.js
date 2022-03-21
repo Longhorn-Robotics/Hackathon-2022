@@ -78,19 +78,19 @@ function getVal() {
     assignmentData.push(val);
 }
 
-var assignmentInfoObject = {
-    Subject: assignmentData[0],
-    AssignmentName: assignmentData[1],
-    DueDate: assignmentData[2]
+var assignmentInfoObject = {,
+    AssignmentName: assignmentData[0],
+    DueDate: assignmentData[1],
+    WarnDate: assignmentData[2]
 }
 
 function sendToRaven(){
-    fetch('https://pro-student.herokuapp.com/', {
-    method: 'POST', // or 'PUT'
+    fetch('https://pro-student.herokuapp.com/v1/assignments', {
+    method: 'PUT', // or 'PUT'
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify(registrationInfoObject),
+    body: JSON.stringify(assignmentInfoObject),
     })
     .then(response => response.json())
     .then(data => {
@@ -127,9 +127,9 @@ fetch('https://pro-student.herokuapp.com/assignments', {
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify(IdStatus),
+    body: JSON.stringify(assignmentList),
     })
-    .then(response => response.json())
+    .then(response => fetchedData = response.json())
     .then(data => {
     console.log('Success:', data);
     })
