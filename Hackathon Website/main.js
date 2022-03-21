@@ -71,7 +71,6 @@ function check_error(){
 
 //takes inputs to manually create assignments
 
-/*
 var assignmentData = [];
 
 function getVal() {
@@ -94,6 +93,11 @@ function renderAssignment(){
     document.getElementById("myText").innerHTML = Due;
     document.getElementById("myText").innerHTML = Warn;
 }
+
+dateRender = String(assignmentData[1])
+document.getElementById(dateRender).innerHTML = Name;
+document.getElementById(dateRender).innerHTML = Due;
+document.getElementById(dateRender).innerHTML = Warn;
 
 function sendToRaven(){
     fetch('https://pro-student.herokuapp.com/v1/assignments', {
