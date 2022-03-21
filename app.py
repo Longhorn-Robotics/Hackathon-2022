@@ -14,6 +14,8 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+import assigments
+
 purchase_server_working = True
 website_title = "EGrocery"
 
@@ -43,3 +45,6 @@ def home():
     return render_template('index.html',
                            title=website_title,
                            pur_ser=purchase_server_working)
+
+
+assigments.init(app)
