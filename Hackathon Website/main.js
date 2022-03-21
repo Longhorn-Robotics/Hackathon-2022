@@ -70,6 +70,7 @@ function check_error(){
 */
 
 //takes inputs to manually create assignments
+
 /*
 var assignmentData = [];
 
@@ -152,7 +153,6 @@ for (var i=0; i<31, i++){
 */
 
 // create and show the notification
-/*
 const showNotification = () => {
     // create a new notification
     const notification = new Notification('trying my best', {
