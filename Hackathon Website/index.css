@@ -103,8 +103,9 @@ table th {
 
 table td {
     border:2px solid #b3adad;
-    text-align:center;
-    padding:50px;
+    text-align:left;
+    padding:10px;
+    padding-bottom: 75px;
     background: #ffffff;
     color: #000000;
 }
@@ -112,5 +113,5 @@ table td {
 .create {
     padding-left: 50px;
     padding-bottom: 50px;
-    
+
 }
