@@ -184,13 +184,13 @@
 
 <div class="create">
     <form action="/action_page.php">
-        <label for="name">Assignment Name:</label>
+        <label for="name" onblur= getVal()>Assignment Name:</label>
         <br>
         <input type="text" id="name" name="name"><br><br>
-        <label for="duedate">Assignment Due Date:</label>
+        <label for="duedate" onblur= getVal()>Assignment Due Date:</label>
         <br>
         <input type="text" id="duedate" name="duedate"><br><br>
-        <label for="warm">Warn Date:</label>
+        <label for="warm" onblur= getVal()>Warn Date:</label>
         <br>
         <input type="text" id="warn" name="warn"><br><br>
         <input type="submit" value="Create Assignment"
